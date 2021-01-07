@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/carrossel.js"></script>
+    <script src="js/legenda.js"></script> 
+    <title>Absoluto</title>
+</head>
+<body>
+    <div class="all">      
+            <section id="conteiner-carrossel">
+                <div id="carrossel" onmouseover="para_e_aparece_bt()" onmouseout="continua_e_some_bt()"> 
+                    <div class="item-1">
+                        <div class="txt-principal">
+                            <h1>TESTE <br> CAROUSEL</h1> 
+                            <h3>DIASHDSDSAIUDSAHDISJIDSADISADSA <br> asdkljsahdosahdushduadhsuas</h3>
+                        </div>                            
+                        <img src="img/slide1.png" alt="">
+                    </div>
+                    <div class="item-2">
+                        <div class="txt-principal">
+                            <h1>TESTE <br> CAROUSEL</h1> 
+                            <h3>DIASHDSDSAIUDSAHDISJIDSADISADSA <br> asdkljsahdosahdushduadhsuas</h3>
+                        </div>                                   
+                        <img src="img/gestao.png" alt="">                      
+                    </div>
+                    <div class="item-3">
+                        <div class="txt-principal">
+                            <h1>TESTE <br> CAROUSEL</h1> 
+                            <h3>DIASHDSDSAIUDSAHDISJIDSADISADSA <br> asdkljsahdosahdushduadhsuas</h3>
+                        </div>                 
+                        <img src="img/telemark.png" alt="">
+                    </div>
+                </div>
+                <div id="legenda" onmouseover="para_e_aparece_bt()" onmouseout="continua_e_some_bt()">
+                    <ul class="legenda-ul">
+                        <li class="item-legenda" onclick="clique(1)" onmouseenter="_hover_(1)" onmouseleave="fora_leave(1)">
+                            <button id="i-legenda-1"></button>
+                        </li>
+                        <li class="item-legenda" onclick="clique(2)" onmouseenter="_hover_(2)" onmouseleave="fora_leave(2)">
+                            <button id="i-legenda-2"></button>
+                        </li>
+                        <li class="item-legenda" onclick="clique(3)" onmouseenter="_hover_(3)" onmouseleave="fora_leave(3)">
+                            <button id="i-legenda-3"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="conteiner-botoes">
+                    <div id="left_bt" onclick="clique('e')" onmouseover="para_e_aparece_bt()" onmouseout="continua_e_some_bt()">
+                        <img src="img/esquerda.svg">
+                    </div>
+                    <div id="right_bt" onclick="clique('d')" onmouseover="para_e_aparece_bt()" onmouseout="continua_e_some_bt()">
+                        <img src="img/direita.svg">
+                    </div>
+                </div>
+            </section>
+        <!-- fim carrosel-->      
+    </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+*{
+	margin: 0;
+	padding: 0;	
+	font-family: Ebrima;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+	
+	scroll-behavior: smooth;
+}
+.all{
+	width: 100%;
+}
+
+/*carrosel*/
+#legenda{
+	position: relative;
+	width: 20%;
+	/* valores modificável */
+	top: 93%;
+	/* Fim */
+	margin: 0 auto;
+	padding-left: 5%;
+}
+.legenda-ul{
+	margin: 0;
+}
+.item-legenda{
+	list-style: none;
+	display: inline;
+	margin-left: 5%;
+	cursor: pointer;
+}
+.i-legenda-nao-hover{
+	border-radius: 50%;
+	border-style: solid;
+	/*valores modificáveis */
+	border-color: transparent;
+	background-color: #b3b3b3;
+	/* fim valor*/
+	width: 20px;
+	height: 20px;
+    cursor: pointer;
+    align-items: center;
+	-webkit-appearance: none;
+}
+.i-legenda-hover{
+	/* valores modificáveis */	
+	background-color: transparent;
+	border-color: #b3b3b3;
+	border-radius: 50%;
+	border-style: solid;
+	width: 21px;
+	height: 21px;
+	cursor: pointer;
+	
+}
+#i-legenda-1, #i-legenda-2, #i-legenda-3:focus{
+	outline: 0;
+}
+/* fim legenda */
+/* carrosel */
+/*/////////////////*/
+/*//////////////////*/
+/* valores modificáveis */
+.item-1, .item-2, .item-3, #conteiner-carrossel{
+	width: 100%;
+	height: 100%;
+}
+/* Fim valores modificáveis */
+/*///////////////////////*/
+/*////////////////////*/
+#conteiner-carrossel{
+	overflow-x: hidden;
+	/* valores modificáveis */
+	width: 100%;
+	height: 100vh;    
+	/* Fim valores modificáveis */
+}
+#carrossel{
+    left: 0;
+    width: 100%;
+	position: relative;
+}
+.txt-principal{
+	position: absolute;
+	width: 50%;
+	margin-left: 10%;
+	margin-top: 10%;
+}
+.txt-principal h1{
+	font-size: 3.5vw;
+	margin-bottom: 0;
+	text-shadow: #474545;
+	color: #a4732d;
+}
+.txt-principal h3{
+	font-size: 1.8vw;
+}
+.item-1{
+	left: 0;
+	position: absolute;
+	/* valor modificável */
+    background-color: white;
+	width: 100%;
+	height: 100vh;
+	/* fim valor */
+}
+.item-1 img{
+    left: 0;
+    float: right;
+    height: 100%;
+}
+.item-2{
+	left: 100%;
+	position: absolute;
+	/* valor modificável */
+    background-color: white;
+	width: 100%;
+	height: 100%;
+	/* fim valor */
+}
+.item-2 img{
+    left: 0;
+    float: right;
+    height: 100vh;
+}
+.item-3{
+	left: 200%;
+	position: absolute;
+	/* valor modificável */	
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+	/* fim valor */
+}
+.item-3 img{
+    left: 0;
+    float: right;
+    height: 100%;
+}
+/* fim carrosel */
+/* botoes direita e esquerda*/
+#conteiner-botoes{
+	position: relative;
+	/* valor modificável */
+	top: 40%;
+	/* fim valor */
+}
+#left_bt, #right_bt{
+	width: 50px;
+	height: 100px;
+	background-color: black;
+	opacity: 0.5;
+	filter: alpha(opacity=50);/* For IE8 and earlier */
+	cursor: pointer;
+}
+#left_bt{
+	float: left;
+	visibility: hidden;
+}
+#right_bt{
+	float: right;
+	visibility: hidden;
+}
+#left_bt:hover, #right_bt:hover{
+	opacity: 0.7;
+}
+#left_bt img, #right_bt img{
+	height: 100px;
+	width: 50px;
+}
+/* fim botoes direita e esquerda */
+/*mobile */
+@media only screen and (max-width: 320px){
+	[class *="item-" ]{
+		width: 100%;
+	}
+	#conteiner-carrossel{
+		margin-left: 0;
+	}
+}
